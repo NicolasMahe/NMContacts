@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NMContacts_Example' do
+  pod 'NMContacts', :path => '../'
+
+  target 'NMContacts_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
