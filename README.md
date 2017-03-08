@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod "NMContacts"
 ```
 
+
+Add to `Info.plist`
+
+```
+<key>NSContactsUsageDescription</key>
+<string>The app needs to access to your contact</string>
+```
+
 ## Author
 
 nicolas@mahe.me, nicolas@mahe.me

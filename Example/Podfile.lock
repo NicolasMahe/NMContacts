@@ -1,0 +1,29 @@
+PODS:
+  - NMContacts (0.0.1):
+    - PromiseKit (~> 4.1)
+  - PromiseKit (4.1.3):
+    - PromiseKit/Foundation (= 4.1.3)
+    - PromiseKit/QuartzCore (= 4.1.3)
+    - PromiseKit/UIKit (= 4.1.3)
+  - PromiseKit/CorePromise (4.1.3)
+  - PromiseKit/Foundation (4.1.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.3):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - NMContacts (from `../`)
+
+EXTERNAL SOURCES:
+  NMContacts:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NMContacts: 74a9a143ad19671ca0dd04faa2795e84e6d8fd18
+  PromiseKit: 56baec63efa89210c023260879435a5a6b3bff00
+
+PODFILE CHECKSUM: f7397648bc8b5da3abded968407302498898e892
+
+COCOAPODS: 1.1.1
