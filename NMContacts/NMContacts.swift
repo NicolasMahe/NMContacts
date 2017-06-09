@@ -56,7 +56,7 @@ public class NMContacts: NSObject {
     }
   }
   
-  public class func fetchContacts(search: String? = nil) throws -> [CNContact] {
+  public class func fetchContacts(search: String? = nil, removeNoPhoneNumber: Bool = false) throws -> [CNContact] {
     
     let keysToFetch = [
       CNContactGivenNameKey as CNKeyDescriptor,
@@ -91,6 +91,13 @@ public class NMContacts: NSObject {
           keysToFetch: keysToFetch
         )
         results.append(contentsOf: containerResults)
+      }
+    }
+    
+    //removeNoPhoneNumber
+    if removeNoPhoneNumber == true {
+      results = results.filter { (contact: CNContact) -> Bool in
+        return contact.phoneNumbers.isEmpty == false
       }
     }
     
