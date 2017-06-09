@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NMContacts'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Easily load iOS Contacts'
   s.description      = <<-DESC
 Easier API to access Contacts on iOS
