@@ -32,11 +32,11 @@ public class NMContacts: NSObject {
     return CNContactStore.authorizationStatus(for: .contacts) == .authorized
   }
   
-  public static var numberOfContact: Int? {
+  public class func numberOfContact(removeNoPhoneNumber: Bool = false) -> Int? {
     if self.isAuthorized == false {
       return nil
     }
-    let contacts = try? self.fetchContacts()
+    let contacts = try? self.fetchContacts(removeNoPhoneNumber: removeNoPhoneNumber)
     return contacts?.count
   }
   
